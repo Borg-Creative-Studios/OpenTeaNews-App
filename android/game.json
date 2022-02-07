@@ -1,0 +1,378 @@
+{
+  "firstLayout": "",
+  "gdVersion": {
+    "build": 99,
+    "major": 4,
+    "minor": 0,
+    "revision": 0
+  },
+  "properties": {
+    "adaptGameResolutionAtRuntime": true,
+    "folderProject": false,
+    "orientation": "portrait",
+    "packageName": "com.example.gamename",
+    "pixelsRounding": false,
+    "projectUuid": "7abf2d86-d108-49e2-bbc0-352c2eb43547",
+    "scaleMode": "linear",
+    "sizeOnStartupMode": "adaptHeight",
+    "useExternalSourceFiles": false,
+    "version": "1.0.0",
+    "name": "OpenTeaNews",
+    "author": "",
+    "windowWidth": 1080,
+    "windowHeight": 1920,
+    "latestCompilationDirectory": "",
+    "maxFPS": 60,
+    "minFPS": 20,
+    "verticalSync": false,
+    "platformSpecificAssets": {},
+    "loadingScreen": {
+      "backgroundColor": 0,
+      "backgroundFadeInDuration": 0.2,
+      "backgroundImageResourceName": "",
+      "gdevelopLogoStyle": "light",
+      "logoAndProgressFadeInDuration": 0.2,
+      "logoAndProgressLogoFadeInDelay": 0.2,
+      "minDuration": 1.5,
+      "progressBarColor": 16777215,
+      "progressBarHeight": 20,
+      "progressBarMaxWidth": 200,
+      "progressBarMinWidth": 40,
+      "progressBarWidthPercent": 30,
+      "showGDevelopSplash": true,
+      "showProgressBar": true
+    },
+    "authorIds": [],
+    "extensionProperties": [],
+    "platforms": [
+      {
+        "name": "GDevelop JS platform"
+      }
+    ],
+    "currentPlatform": "GDevelop JS platform"
+  },
+  "resources": {
+    "resources": [],
+    "resourceFolders": []
+  },
+  "objects": [],
+  "objectsGroups": [],
+  "variables": [],
+  "layouts": [
+    {
+      "b": 26,
+      "disableInputWhenNotFocused": true,
+      "mangledName": "home",
+      "name": "home",
+      "oglFOV": 90,
+      "oglZFar": 500,
+      "oglZNear": 1,
+      "r": 26,
+      "standardSortMethod": true,
+      "stopSoundsOnStartup": true,
+      "title": "OpenTeaNews",
+      "v": 26,
+      "uiSettings": {
+        "grid": false,
+        "gridType": "rectangular",
+        "gridWidth": 32,
+        "gridHeight": 32,
+        "gridOffsetX": 0,
+        "gridOffsetY": 0,
+        "gridColor": 10401023,
+        "gridAlpha": 0.8,
+        "snap": false,
+        "zoomFactor": 0.30000000000000016,
+        "windowMask": false
+      },
+      "objectsGroups": [],
+      "variables": [],
+      "instances": [],
+      "objects": [],
+      "events": [
+        {
+          "disabled": false,
+          "folded": false,
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "inverted": false,
+                "value": "DepartScene"
+              },
+              "parameters": [
+                ""
+              ],
+              "subInstructions": []
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "inverted": false,
+                "value": "Iframe::Create"
+              },
+              "parameters": [
+                "",
+                "\"News\"",
+                "\"https://tea.borgcreative.com/android/index.html\"",
+                "ScreenWidth()",
+                "ScreenHeight()",
+                "0",
+                "0",
+                "yes",
+                "",
+                "",
+                ""
+              ],
+              "subInstructions": []
+            }
+          ],
+          "events": []
+        }
+      ],
+      "layers": [
+        {
+          "ambientLightColorB": 32,
+          "ambientLightColorG": 0,
+          "ambientLightColorR": 0,
+          "followBaseLayerCamera": false,
+          "isLightingLayer": false,
+          "name": "",
+          "visibility": true,
+          "cameras": [
+            {
+              "defaultSize": true,
+              "defaultViewport": true,
+              "height": 0,
+              "viewportBottom": 1,
+              "viewportLeft": 0,
+              "viewportRight": 1,
+              "viewportTop": 0,
+              "width": 0
+            }
+          ],
+          "effects": []
+        }
+      ],
+      "behaviorsSharedData": []
+    }
+  ],
+  "externalEvents": [],
+  "eventsFunctionsExtensions": [
+    {
+      "author": "jack, DHsoftware, @Bouh",
+      "description": "This extension allows you to set up and create Iframes to show websites on your game.\n\nNew action in this extension:\n- Create an iFrame\n- Delete an iFrame\n\nFor security reasons on browsers, some websites can be limited if the host and the iFrame do not have the same origin. \nRead more: [Same-origin policy](https://developer.mozilla.org/en-US/docs/Web/Security/Same-origin_policy)",
+      "extensionNamespace": "",
+      "fullName": "Iframe",
+      "helpPath": "",
+      "iconUrl": "data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz48IURPQ1RZUEUgc3ZnIFBVQkxJQyAiLS8vVzNDLy9EVEQgU1ZHIDEuMS8vRU4iICJodHRwOi8vd3d3LnczLm9yZy9HcmFwaGljcy9TVkcvMS4xL0RURC9zdmcxMS5kdGQiPjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgdmVyc2lvbj0iMS4xIiBpZD0ibWRpLWlmcmFtZS1hcnJheS1vdXRsaW5lIiB3aWR0aD0iMjQiIGhlaWdodD0iMjQiIHZpZXdCb3g9IjAgMCAyNCAyNCI+PHBhdGggZD0iTTIxIDJIM0MxLjkgMiAxIDIuOSAxIDRWMjBDMSAyMS4xIDEuOSAyMiAzIDIySDIxQzIyLjEgMjIgMjMgMjEuMSAyMyAyMFY0QzIzIDIuOSAyMi4xIDIgMjEgMk0yMSAyMEgzVjZIMjFWMjBNNiA4VjE4SDEwVjE2SDhWMTBIMTBWOEg2TTE2IDE2SDE0VjE4SDE4VjhIMTRWMTBIMTZWMTYiIC8+PC9zdmc+",
+      "name": "Iframe",
+      "previewIconUrl": "https://resources.gdevelop-app.com/assets/Icons/iframe-array-outline.svg",
+      "shortDescription": "Create or delete an iframe to embed websites.",
+      "version": "1.0.0",
+      "origin": {
+        "identifier": "Iframe",
+        "name": "gdevelop-extension-store"
+      },
+      "tags": [
+        "browser",
+        "iframe",
+        "dom apis",
+        "online"
+      ],
+      "authorIds": [
+        "2OwwM8ToR9dx9RJ2sAKTcrLmCB92",
+        "kImlRGnf8uU4FlHfeGpkHoCxIfn2"
+      ],
+      "dependencies": [],
+      "eventsFunctions": [
+        {
+          "description": "Create a new Iframe to embed a website inside the game.",
+          "fullName": "Create an Iframe",
+          "functionType": "Action",
+          "group": "",
+          "name": "Create",
+          "private": false,
+          "sentence": "Create Iframe _PARAM1_ at position _PARAM5_:_PARAM6_, width: _PARAM3_, height: _PARAM4_, url: _PARAM2_",
+          "events": [
+            {
+              "disabled": false,
+              "folded": false,
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "BuiltinCommonInstructions::Once"
+                  },
+                  "parameters": [],
+                  "subInstructions": []
+                }
+              ],
+              "actions": [],
+              "events": [
+                {
+                  "disabled": false,
+                  "folded": false,
+                  "type": "BuiltinCommonInstructions::JsCode",
+                  "inlineCode": "const iframe = document.createElement(\"iframe\");\n\niframe.src = eventsFunctionContext.getArgument(\"WebsiteURL\");\niframe.id = eventsFunctionContext.getArgument(\"Name\");\niframe.setAttribute(\"width\", eventsFunctionContext.getArgument(\"Width\"));\niframe.setAttribute(\"height\", eventsFunctionContext.getArgument(\"Height\"));\niframe.style.top = eventsFunctionContext.getArgument(\"PositionY\") + \"px\";\niframe.style.left = eventsFunctionContext.getArgument(\"PositionX\") + \"px\";\niframe.frameBorder = eventsFunctionContext.getArgument(\"Border\");\niframe.frameBorder == \"true\" ? iframe.frameBorder = \"yes\" : iframe.frameBorder = \"no\";\niframe.scrolling = eventsFunctionContext.getArgument(\"Scrolling\");\niframe.scrolling == \"true\" ? iframe.scrolling = \"yes\" : iframe.scrolling = \"no\";\niframe.style.position = \"absolute\";\n\niframe.style.cssText += eventsFunctionContext.getArgument(\"ExtraCSS\");\n\n\ndocument.body.appendChild(iframe);\n",
+                  "parameterObjects": "",
+                  "useStrict": true,
+                  "eventsSheetExpanded": true
+                }
+              ]
+            }
+          ],
+          "parameters": [
+            {
+              "codeOnly": false,
+              "defaultValue": "",
+              "description": "Name (DOM id)",
+              "longDescription": "",
+              "name": "Name",
+              "optional": false,
+              "supplementaryInformation": "",
+              "type": "string"
+            },
+            {
+              "codeOnly": false,
+              "defaultValue": "",
+              "description": "URL",
+              "longDescription": "",
+              "name": "WebsiteURL",
+              "optional": false,
+              "supplementaryInformation": "",
+              "type": "string"
+            },
+            {
+              "codeOnly": false,
+              "defaultValue": "",
+              "description": "Width",
+              "longDescription": "",
+              "name": "Width",
+              "optional": false,
+              "supplementaryInformation": "",
+              "type": "expression"
+            },
+            {
+              "codeOnly": false,
+              "defaultValue": "",
+              "description": "Height",
+              "longDescription": "",
+              "name": "Height",
+              "optional": false,
+              "supplementaryInformation": "",
+              "type": "expression"
+            },
+            {
+              "codeOnly": false,
+              "defaultValue": "",
+              "description": "Position X",
+              "longDescription": "",
+              "name": "PositionX",
+              "optional": false,
+              "supplementaryInformation": "",
+              "type": "expression"
+            },
+            {
+              "codeOnly": false,
+              "defaultValue": "",
+              "description": "Position Y",
+              "longDescription": "",
+              "name": "PositionY",
+              "optional": false,
+              "supplementaryInformation": "",
+              "type": "expression"
+            },
+            {
+              "codeOnly": false,
+              "defaultValue": "",
+              "description": "Show scrollbar",
+              "longDescription": "",
+              "name": "Scrolling",
+              "optional": false,
+              "supplementaryInformation": "[\"no\",\"yes\"]",
+              "type": "yesorno"
+            },
+            {
+              "codeOnly": false,
+              "defaultValue": "",
+              "description": "Show border",
+              "longDescription": "",
+              "name": "Border",
+              "optional": false,
+              "supplementaryInformation": "[\"yes\",\"no\"]",
+              "type": "yesorno"
+            },
+            {
+              "codeOnly": false,
+              "defaultValue": "",
+              "description": "Extra CSS styles (optional)",
+              "longDescription": "e.g: `\"border: 10px #f00 solid;\"`",
+              "name": "ExtraCSS",
+              "optional": false,
+              "supplementaryInformation": "",
+              "type": "string"
+            }
+          ],
+          "objectGroups": []
+        },
+        {
+          "description": "Delete the specified Iframe.",
+          "fullName": "Delete an Iframe",
+          "functionType": "Action",
+          "group": "",
+          "name": "Delete",
+          "private": false,
+          "sentence": "Delete Iframe _PARAM1_",
+          "events": [
+            {
+              "disabled": false,
+              "folded": false,
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "BuiltinCommonInstructions::Once"
+                  },
+                  "parameters": [],
+                  "subInstructions": []
+                }
+              ],
+              "actions": [],
+              "events": [
+                {
+                  "disabled": false,
+                  "folded": false,
+                  "type": "BuiltinCommonInstructions::JsCode",
+                  "inlineCode": "document.getElementById(eventsFunctionContext.getArgument(\"Name\")).remove();",
+                  "parameterObjects": "",
+                  "useStrict": true,
+                  "eventsSheetExpanded": false
+                }
+              ]
+            }
+          ],
+          "parameters": [
+            {
+              "codeOnly": false,
+              "defaultValue": "",
+              "description": "Name (DOM id)",
+              "longDescription": "",
+              "name": "Name",
+              "optional": false,
+              "supplementaryInformation": "",
+              "type": "string"
+            }
+          ],
+          "objectGroups": []
+        }
+      ],
+      "eventsBasedBehaviors": []
+    }
+  ],
+  "externalLayouts": [],
+  "externalSourceFiles": []
+}
